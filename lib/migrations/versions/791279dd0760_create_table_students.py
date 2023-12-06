@@ -22,7 +22,7 @@ def upgrade() -> None:
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('name', sa.String(), nullable=True),
     sa.Column('email', sa.String(length=55), nullable=True),
-    sa.Column('grade', sa.Integer(), nullable=True),
+    sa.Column('performance', sa.Integer(), nullable=True),
     sa.Column('birthday', sa.DateTime(), nullable=True),
     sa.Column('enrolled_date', sa.DateTime(), nullable=True),
     sa.PrimaryKeyConstraint('id')
